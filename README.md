@@ -5,8 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/STRatingControl.svg?style=flat)](http://cocoapods.org/pods/STRatingControl)
 [![Platform](https://img.shields.io/cocoapods/p/STRatingControl.svg?style=flat)](http://cocoapods.org/pods/STRatingControl)
 
-# STRatingControl
-
 **STRatingControl** is the new **wonderful** rating control written in Swift!. Supports AutoLayout. It was also designed to cover user’s needs during customization. Created with **delightful combination**, **STRatingControl** improves your user experience. 
 
 ## Installation
