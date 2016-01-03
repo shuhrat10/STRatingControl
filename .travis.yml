@@ -6,8 +6,8 @@ cache:
     - vendor/bundle
 install:
   - brew update && (brew upgrade xctool || true) && (brew install xcproj || true) && xctool --version
-  - bundle install --path=vendor/bundle --binstubs=vendor/bin
-  - cd Example && bundle exec pod install && cd -
+  # - bundle install --path=vendor/bundle --binstubs=vendor/bin
+  # - cd Example && bundle exec pod install && cd -
 
 xcode_workspace: Example/STRatingControl.xcworkspace
 xcode_scheme: STRatingControl-Example
