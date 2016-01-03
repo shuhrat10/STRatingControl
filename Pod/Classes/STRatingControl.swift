@@ -10,11 +10,11 @@ import UIKit
 
 @IBDesignable
 
-class STRatingControl: UIView {
+public class STRatingControl: UIView {
   
   // MARK: Properties
   
-  @IBInspectable var rating : Int = 0 {
+  @IBInspectable public var rating : Int = 0 {
     didSet {
       if rating < 0 {
         rating = 0
@@ -74,7 +74,7 @@ class STRatingControl: UIView {
     }
   }
   
-  override func layoutSubviews() {
+  override public func layoutSubviews() {
     super.layoutSubviews()
     
     self.initRate()
@@ -90,7 +90,7 @@ class STRatingControl: UIView {
     updateButtonSelectionStates()
   }
   
-  override func intrinsicContentSize() -> CGSize {
+  override public func intrinsicContentSize() -> CGSize {
     return CGSize(width: width, height: buttonSize)
   }
   
@@ -103,11 +103,11 @@ class STRatingControl: UIView {
   
   // MARK: Gesture recognizer
   
-  override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
     handleStarTouches(touches, withEvent: event)
   }
   
-  override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override public func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
     handleStarTouches(touches, withEvent: event)
   }
   
