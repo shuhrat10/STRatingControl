@@ -1,6 +1,6 @@
 # STRatingControl
 
-[![CI Status](http://img.shields.io/travis/Shukhrat Tursunov/STRatingControl.svg?style=flat)](https://travis-ci.org/Shukhrat Tursunov/STRatingControl)
+[![CI Status](http://img.shields.io/travis/shuhrat10/STRatingControl.svg?style=flat)](https://travis-ci.org/shuhrat10/STRatingControl)
 [![Version](https://img.shields.io/cocoapods/v/STRatingControl.svg?style=flat)](http://cocoapods.org/pods/STRatingControl)
 [![License](https://img.shields.io/cocoapods/l/STRatingControl.svg?style=flat)](http://cocoapods.org/pods/STRatingControl)
 [![Platform](https://img.shields.io/cocoapods/p/STRatingControl.svg?style=flat)](http://cocoapods.org/pods/STRatingControl)
