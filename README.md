@@ -7,6 +7,10 @@
 
 **STRatingControl** is the new **wonderful** rating control written in Swift!. Supports AutoLayout. It was also designed to cover user’s needs during customization. Created with **delightful combination**, **STRatingControl** improves your user experience. 
 
+## How It Looks
+
+<img src="https://github.com/shuhrat10/STRatingControl/blob/master/Screenshots/demo.gif" alt="Demo" width="300"/>
+
 ## Installation
 There are two ways to add the **STRatingControl** library to your project. Add it as a regular library or install it through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
@@ -14,13 +18,9 @@ There are two ways to add the **STRatingControl** library to your project. Add i
 
 You may also quick try the example project with
 
-`pod try STRatingControl'`
+`pod try 'STRatingControl'`
 
 **Library requires target iOS 7.0 and above**
-
-## How It Looks
-
-<img src="https://github.com/shuhrat10/STRatingControl/blob/master/Screenshots/demo.gif" alt="Demo" width="300"/>
 
 ## Properties
 
@@ -34,7 +34,7 @@ You may also quick try the example project with
 
 ## Usage and Customization
 
-**STRatingControl** also implements **IB_DESIGNABLE** and **IBInspectable** so you can fully customize it in Interface Builder.
+**STRatingControl** implements **IB_DESIGNABLE** and **IBInspectable** so you can fully customize it in Interface Builder.
 
 <img src="https://github.com/shuhrat10/STRatingControl/blob/master/Screenshots/screen.jpg" alt="" width="100%"/>
 
@@ -59,4 +59,4 @@ If you or your users have other specific needs and you're having issues with thi
 
 ## License
 The MIT License (MIT)
-Copyright © 2015 Shukhrat Tursunov
+Copyright © 2016 Shukhrat Tursunov
