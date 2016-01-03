@@ -15,7 +15,7 @@ You may also quick try the example project with
 
 ## How It Looks
 
-<img src="https://github.com/shuhrat10/STRatingControl/Screenshots/demo.gif" alt="Demo" width="300"/>
+<img src="https://github.com/shuhrat10/STRatingControl/tree/master/Screenshots/demo.gif" alt="Demo" width="300"/>
 
 ## Properties
 
@@ -31,7 +31,7 @@ You may also quick try the example project with
 
 **STRatingControl** also implements **IB_DESIGNABLE** and **IBInspectable** so you can fully customize it in Interface Builder.
 
-<img src="https://github.com/shuhrat10/STRatingControl/Screenshots/screen.jpg" alt="" width="100%"/>
+<img src="https://github.com/shuhrat10/STRatingControl/tree/master/Screenshots/screen.jpg" alt="" width="100%"/>
 
 Put on storyboard UIView, and set class STRatingControl.
 
