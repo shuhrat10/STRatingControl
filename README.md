@@ -14,7 +14,9 @@
 ## Installation
 There are two ways to add the **STRatingControl** library to your project. Add it as a regular library or install it through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
-`pod 'STRatingControl'`
+` use_frameworks!
+	pod 'STRatingControl'
+`
 
 You may also quick try the example project with
 
