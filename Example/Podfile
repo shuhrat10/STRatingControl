@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'STRatingControl_Example', :exclusive => true do
+  pod "STRatingControl", :path => "../"
+end
+
+target 'STRatingControl_Tests', :exclusive => true do
+  pod "STRatingControl", :path => "../"
+
+  
+end

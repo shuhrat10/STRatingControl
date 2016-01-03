@@ -1,0 +1,6 @@
+framework module STRatingControl {
+  umbrella header "STRatingControl-umbrella.h"
+
+  export *
+  module * { export * }
+}

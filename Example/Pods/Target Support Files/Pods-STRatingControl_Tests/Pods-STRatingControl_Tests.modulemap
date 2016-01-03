@@ -1,0 +1,6 @@
+framework module Pods_STRatingControl_Tests {
+  umbrella header "Pods-STRatingControl_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

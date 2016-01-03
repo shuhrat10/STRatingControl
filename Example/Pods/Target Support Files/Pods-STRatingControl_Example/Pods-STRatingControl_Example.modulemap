@@ -1,0 +1,6 @@
+framework module Pods_STRatingControl_Example {
+  umbrella header "Pods-STRatingControl_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

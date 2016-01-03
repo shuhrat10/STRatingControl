@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42AFB530979D91D71D05A9D89443B8D7 /* Pods-STRatingControl_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5BEF9C3562066E67C0BD4935152829C /* Pods-STRatingControl_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BBF9639CD71621D47B82DABA7847D4A /* STRatingControl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C35A5C1C4FC0CE6C4C1DD433D81A6983 /* STRatingControl.bundle */; };
+		65F571AC0F10842831C4BF2C4EA01ACF /* Pods-STRatingControl_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FFCC18BBDFE6BCFD0ABD3812DFF3F49 /* Pods-STRatingControl_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81DDB4268845BC6E2CB27A0D33F5FA75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		846BE21ADFC58A68A30C244EF0A7FAE6 /* Pods-STRatingControl_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2714FCDCC23C7DA157BDD11FC3D97883 /* Pods-STRatingControl_Example-dummy.m */; };
+		9CE8B5BFEB9261C7C5CAFC0FA6298847 /* Pods-STRatingControl_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 353FA8081CD577DE765528E58B63576D /* Pods-STRatingControl_Tests-dummy.m */; };
+		A578024FB0B27980C22E6339063523CD /* STRatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6290F275849F446767C52F6D84686AE5 /* STRatingControl.swift */; };
+		AEA4607F9008459A1BD20D6A97BE7D7C /* STRatingControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 515B22FC0BD4595B5F2FCE69D29EE286 /* STRatingControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B583ED3502C5E82DAABCFA721402553A /* STRatingControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A9EA2212F2AA72290D114BEDAFFA56 /* STRatingControl-dummy.m */; };
+		E8CDA285B35DB9B78C775F4DEC9B12F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		FDCF1B2CEB463FE026B7069E71EBB185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		142915F595B8C34EDB73728DB7540126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51D78B006516B2A4049DB3B495C9B73A;
+			remoteInfo = STRatingControl;
+		};
+		443711E6D9209051F39B3612B71C2657 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A895DFABB7365DC9D5448743A1E9BEA3;
+			remoteInfo = "STRatingControl-STRatingControl";
+		};
+		D8A3019C237679133D9476ED6B9DC070 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51D78B006516B2A4049DB3B495C9B73A;
+			remoteInfo = STRatingControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07AD0319DADBEC73C936BB0665A01FA3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10FB397431815E523BCF3FBA78903BA3 /* Pods_STRatingControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STRatingControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2714FCDCC23C7DA157BDD11FC3D97883 /* Pods-STRatingControl_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STRatingControl_Example-dummy.m"; sourceTree = "<group>"; };
+		353FA8081CD577DE765528E58B63576D /* Pods-STRatingControl_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STRatingControl_Tests-dummy.m"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		43A9EA2212F2AA72290D114BEDAFFA56 /* STRatingControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STRatingControl-dummy.m"; sourceTree = "<group>"; };
+		49F7FFCC9461261731ACC6F492C8C307 /* Pods-STRatingControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STRatingControl_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4FFCC18BBDFE6BCFD0ABD3812DFF3F49 /* Pods-STRatingControl_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-STRatingControl_Example-umbrella.h"; sourceTree = "<group>"; };
+		515B22FC0BD4595B5F2FCE69D29EE286 /* STRatingControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STRatingControl-umbrella.h"; sourceTree = "<group>"; };
+		55BC856B01BDD7A250D221CD0621D38C /* STRatingControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STRatingControl-prefix.pch"; sourceTree = "<group>"; };
+		56637BDFA37B360A797ACC59B15C85B7 /* Pods-STRatingControl_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STRatingControl_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		56A3DA1537365DA4CC7CDA08A8C8B96A /* Pods-STRatingControl_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-STRatingControl_Example-resources.sh"; sourceTree = "<group>"; };
+		5A4DA35AE2C859EE7C70821C95AC5204 /* Pods-STRatingControl_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-STRatingControl_Tests.modulemap"; sourceTree = "<group>"; };
+		6290F275849F446767C52F6D84686AE5 /* STRatingControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = STRatingControl.swift; sourceTree = "<group>"; };
+		6B2E6D192C1CC504BB58E39C208AF4F0 /* Pods_STRatingControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STRatingControl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77C5BA631C1385C45F23BA54E19FFFE6 /* Pods-STRatingControl_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-STRatingControl_Example.modulemap"; sourceTree = "<group>"; };
+		87EB3886F2C56CCEBED533BDEDF95EE4 /* STRatingControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = STRatingControl.modulemap; sourceTree = "<group>"; };
+		92D4665BB7A7E8E7A67A78CD0ED2F160 /* Pods-STRatingControl_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STRatingControl_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		92D9C8F8B04AFFC40B07E95BF51CA5C4 /* Pods-STRatingControl_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-STRatingControl_Tests-resources.sh"; sourceTree = "<group>"; };
+		9F4BD5C6B4749584B5C86445506FDA8F /* Pods-STRatingControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STRatingControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AA11D6BF3BC9338D9D95A06EC89783F9 /* Pods-STRatingControl_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-STRatingControl_Example-frameworks.sh"; sourceTree = "<group>"; };
+		ABB4449CE39310FC76452FE6227D8058 /* STRatingControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STRatingControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4472E00D22660A0E58DF571BD371C59 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC8ABC0FC50C49649A61F07B384E8D3E /* Pods-STRatingControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STRatingControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C0C455894F3431841B92A0BCE7C1419B /* Pods-STRatingControl_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STRatingControl_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C35A5C1C4FC0CE6C4C1DD433D81A6983 /* STRatingControl.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STRatingControl.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE56C4791F1E27F35701B75ECDAEF31C /* Pods-STRatingControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STRatingControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E41203BE465F46324358D9AE1E4C5162 /* Pods-STRatingControl_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-STRatingControl_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E55E0DAB4A2741AFBA53B5A13BC52BC0 /* Pods-STRatingControl_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STRatingControl_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EC42366E03BEB968808FC4B928878D25 /* STRatingControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STRatingControl.xcconfig; sourceTree = "<group>"; };
+		F5BEF9C3562066E67C0BD4935152829C /* Pods-STRatingControl_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-STRatingControl_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FE851390BE26C0DC025A3B290C2E718F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D6EF252CF32948994B80B1BCB6D7EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDCF1B2CEB463FE026B7069E71EBB185 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0363B65CA743D116CC421E17176ADEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81DDB4268845BC6E2CB27A0D33F5FA75 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D88261CB267BE718E78177EC53A5EC3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E706F3B20D4837817AE6AB911BA87184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CDA285B35DB9B78C775F4DEC9B12F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00C35C15FAB0B1A0D1FC81E2C3CDB78E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3C1D3E558911A2EDBBD0ED1D386B1C85 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		018DBC30F026B9921FAA0EE8FB211A34 /* STRatingControl */ = {
+			isa = PBXGroup;
+			children = (
+				00C35C15FAB0B1A0D1FC81E2C3CDB78E /* Pod */,
+				D28017F68366099B6487688C87C70F5C /* Support Files */,
+			);
+			name = STRatingControl;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		12EB1756BAF11AEBDB866EC07003D266 /* Pods-STRatingControl_Example */ = {
+			isa = PBXGroup;
+			children = (
+				07AD0319DADBEC73C936BB0665A01FA3 /* Info.plist */,
+				77C5BA631C1385C45F23BA54E19FFFE6 /* Pods-STRatingControl_Example.modulemap */,
+				C0C455894F3431841B92A0BCE7C1419B /* Pods-STRatingControl_Example-acknowledgements.markdown */,
+				92D4665BB7A7E8E7A67A78CD0ED2F160 /* Pods-STRatingControl_Example-acknowledgements.plist */,
+				2714FCDCC23C7DA157BDD11FC3D97883 /* Pods-STRatingControl_Example-dummy.m */,
+				AA11D6BF3BC9338D9D95A06EC89783F9 /* Pods-STRatingControl_Example-frameworks.sh */,
+				56A3DA1537365DA4CC7CDA08A8C8B96A /* Pods-STRatingControl_Example-resources.sh */,
+				4FFCC18BBDFE6BCFD0ABD3812DFF3F49 /* Pods-STRatingControl_Example-umbrella.h */,
+				BC8ABC0FC50C49649A61F07B384E8D3E /* Pods-STRatingControl_Example.debug.xcconfig */,
+				49F7FFCC9461261731ACC6F492C8C307 /* Pods-STRatingControl_Example.release.xcconfig */,
+			);
+			name = "Pods-STRatingControl_Example";
+			path = "Target Support Files/Pods-STRatingControl_Example";
+			sourceTree = "<group>";
+		};
+		1FF2942EA5383CF11C5EF80F8082E2F0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				018DBC30F026B9921FAA0EE8FB211A34 /* STRatingControl */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		241D0B8387E7F48CDC63D753043DB6CF /* Pods-STRatingControl_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B4472E00D22660A0E58DF571BD371C59 /* Info.plist */,
+				5A4DA35AE2C859EE7C70821C95AC5204 /* Pods-STRatingControl_Tests.modulemap */,
+				E55E0DAB4A2741AFBA53B5A13BC52BC0 /* Pods-STRatingControl_Tests-acknowledgements.markdown */,
+				56637BDFA37B360A797ACC59B15C85B7 /* Pods-STRatingControl_Tests-acknowledgements.plist */,
+				353FA8081CD577DE765528E58B63576D /* Pods-STRatingControl_Tests-dummy.m */,
+				E41203BE465F46324358D9AE1E4C5162 /* Pods-STRatingControl_Tests-frameworks.sh */,
+				92D9C8F8B04AFFC40B07E95BF51CA5C4 /* Pods-STRatingControl_Tests-resources.sh */,
+				F5BEF9C3562066E67C0BD4935152829C /* Pods-STRatingControl_Tests-umbrella.h */,
+				CE56C4791F1E27F35701B75ECDAEF31C /* Pods-STRatingControl_Tests.debug.xcconfig */,
+				9F4BD5C6B4749584B5C86445506FDA8F /* Pods-STRatingControl_Tests.release.xcconfig */,
+			);
+			name = "Pods-STRatingControl_Tests";
+			path = "Target Support Files/Pods-STRatingControl_Tests";
+			sourceTree = "<group>";
+		};
+		3C1D3E558911A2EDBBD0ED1D386B1C85 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6290F275849F446767C52F6D84686AE5 /* STRatingControl.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				1FF2942EA5383CF11C5EF80F8082E2F0 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BDFC66836C599FB079E70DBDEE8238E3 /* Products */,
+				E59F715BBA7746CE690A52C9B411A063 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDFC66836C599FB079E70DBDEE8238E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10FB397431815E523BCF3FBA78903BA3 /* Pods_STRatingControl_Example.framework */,
+				6B2E6D192C1CC504BB58E39C208AF4F0 /* Pods_STRatingControl_Tests.framework */,
+				C35A5C1C4FC0CE6C4C1DD433D81A6983 /* STRatingControl.bundle */,
+				ABB4449CE39310FC76452FE6227D8058 /* STRatingControl.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D28017F68366099B6487688C87C70F5C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE851390BE26C0DC025A3B290C2E718F /* Info.plist */,
+				87EB3886F2C56CCEBED533BDEDF95EE4 /* STRatingControl.modulemap */,
+				EC42366E03BEB968808FC4B928878D25 /* STRatingControl.xcconfig */,
+				43A9EA2212F2AA72290D114BEDAFFA56 /* STRatingControl-dummy.m */,
+				55BC856B01BDD7A250D221CD0621D38C /* STRatingControl-prefix.pch */,
+				515B22FC0BD4595B5F2FCE69D29EE286 /* STRatingControl-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/STRatingControl";
+			sourceTree = "<group>";
+		};
+		E59F715BBA7746CE690A52C9B411A063 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				12EB1756BAF11AEBDB866EC07003D266 /* Pods-STRatingControl_Example */,
+				241D0B8387E7F48CDC63D753043DB6CF /* Pods-STRatingControl_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		359FDC81A10C4B590496ED111B6A25B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F571AC0F10842831C4BF2C4EA01ACF /* Pods-STRatingControl_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		792D2AF86891F746BB2799EA4D25234A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AFB530979D91D71D05A9D89443B8D7 /* Pods-STRatingControl_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47DA29791ED09EE9365D8CE618433C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA4607F9008459A1BD20D6A97BE7D7C /* STRatingControl-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		23DF96DB98EEFCF2CB065990E635ED1C /* Pods-STRatingControl_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEB7DDADA2C757A54037E4FD395FB564 /* Build configuration list for PBXNativeTarget "Pods-STRatingControl_Tests" */;
+			buildPhases = (
+				BBBF72AE29DF6EE781ABE0838E80F368 /* Sources */,
+				1D6EF252CF32948994B80B1BCB6D7EFA /* Frameworks */,
+				792D2AF86891F746BB2799EA4D25234A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A4AF72C529A0ED37896074A0B2342AD /* PBXTargetDependency */,
+			);
+			name = "Pods-STRatingControl_Tests";
+			productName = "Pods-STRatingControl_Tests";
+			productReference = 6B2E6D192C1CC504BB58E39C208AF4F0 /* Pods_STRatingControl_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		51D78B006516B2A4049DB3B495C9B73A /* STRatingControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8344B1AB61D1475C315FC3878D54BB36 /* Build configuration list for PBXNativeTarget "STRatingControl" */;
+			buildPhases = (
+				79A2C5BAB2E2EB9B2936DA7C27EDDCBA /* Sources */,
+				B0363B65CA743D116CC421E17176ADEB /* Frameworks */,
+				AEB4B3C86A74932BF17CB3D644447631 /* Resources */,
+				F47DA29791ED09EE9365D8CE618433C0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				512057261D76F8EDE2C9199A52F09909 /* PBXTargetDependency */,
+			);
+			name = STRatingControl;
+			productName = STRatingControl;
+			productReference = ABB4449CE39310FC76452FE6227D8058 /* STRatingControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C50E16F786E85F00DA9584B1BFA8772 /* Pods-STRatingControl_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43DEB87DA6AF336852917BD95716DA0A /* Build configuration list for PBXNativeTarget "Pods-STRatingControl_Example" */;
+			buildPhases = (
+				BB5D359986D524D8D1E9F3A28FA85C67 /* Sources */,
+				E706F3B20D4837817AE6AB911BA87184 /* Frameworks */,
+				359FDC81A10C4B590496ED111B6A25B4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1AB4DEADDB1E92E80144F0FF646E1E2 /* PBXTargetDependency */,
+			);
+			name = "Pods-STRatingControl_Example";
+			productName = "Pods-STRatingControl_Example";
+			productReference = 10FB397431815E523BCF3FBA78903BA3 /* Pods_STRatingControl_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A895DFABB7365DC9D5448743A1E9BEA3 /* STRatingControl-STRatingControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27528CE12F40DF32803477A47BCF7D2A /* Build configuration list for PBXNativeTarget "STRatingControl-STRatingControl" */;
+			buildPhases = (
+				40F84439D580DB9A1F318541F2CAFBD3 /* Sources */,
+				D88261CB267BE718E78177EC53A5EC3D /* Frameworks */,
+				B00782896EAFB2F6256FAA9B3A8E809E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "STRatingControl-STRatingControl";
+			productName = "STRatingControl-STRatingControl";
+			productReference = C35A5C1C4FC0CE6C4C1DD433D81A6983 /* STRatingControl.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0720;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BDFC66836C599FB079E70DBDEE8238E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C50E16F786E85F00DA9584B1BFA8772 /* Pods-STRatingControl_Example */,
+				23DF96DB98EEFCF2CB065990E635ED1C /* Pods-STRatingControl_Tests */,
+				51D78B006516B2A4049DB3B495C9B73A /* STRatingControl */,
+				A895DFABB7365DC9D5448743A1E9BEA3 /* STRatingControl-STRatingControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEB4B3C86A74932BF17CB3D644447631 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBF9639CD71621D47B82DABA7847D4A /* STRatingControl.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B00782896EAFB2F6256FAA9B3A8E809E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40F84439D580DB9A1F318541F2CAFBD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A2C5BAB2E2EB9B2936DA7C27EDDCBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A578024FB0B27980C22E6339063523CD /* STRatingControl.swift in Sources */,
+				B583ED3502C5E82DAABCFA721402553A /* STRatingControl-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5D359986D524D8D1E9F3A28FA85C67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846BE21ADFC58A68A30C244EF0A7FAE6 /* Pods-STRatingControl_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBBF72AE29DF6EE781ABE0838E80F368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE8B5BFEB9261C7C5CAFC0FA6298847 /* Pods-STRatingControl_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A4AF72C529A0ED37896074A0B2342AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = STRatingControl;
+			target = 51D78B006516B2A4049DB3B495C9B73A /* STRatingControl */;
+			targetProxy = D8A3019C237679133D9476ED6B9DC070 /* PBXContainerItemProxy */;
+		};
+		512057261D76F8EDE2C9199A52F09909 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "STRatingControl-STRatingControl";
+			target = A895DFABB7365DC9D5448743A1E9BEA3 /* STRatingControl-STRatingControl */;
+			targetProxy = 443711E6D9209051F39B3612B71C2657 /* PBXContainerItemProxy */;
+		};
+		B1AB4DEADDB1E92E80144F0FF646E1E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = STRatingControl;
+			target = 51D78B006516B2A4049DB3B495C9B73A /* STRatingControl */;
+			targetProxy = 142915F595B8C34EDB73728DB7540126 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0DDFC6864DB21B5963D5110627D98BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE56C4791F1E27F35701B75ECDAEF31C /* Pods-STRatingControl_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-STRatingControl_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-STRatingControl_Tests/Pods-STRatingControl_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_STRatingControl_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		159E78BAB3E62D5792254F089AC6151C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC42366E03BEB968808FC4B928878D25 /* STRatingControl.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = STRatingControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		23318A34D14399F4BB1019E5C7D81911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49F7FFCC9461261731ACC6F492C8C307 /* Pods-STRatingControl_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-STRatingControl_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-STRatingControl_Example/Pods-STRatingControl_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_STRatingControl_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5B17EFA9485B36BA8A98E3044D3D2E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC42366E03BEB968808FC4B928878D25 /* STRatingControl.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = STRatingControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8DE93899200C43CB14E4FFA5CA5103AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC8ABC0FC50C49649A61F07B384E8D3E /* Pods-STRatingControl_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-STRatingControl_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-STRatingControl_Example/Pods-STRatingControl_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_STRatingControl_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3DBFFE2F5D7931A28FF380622606752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC42366E03BEB968808FC4B928878D25 /* STRatingControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/STRatingControl/STRatingControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/STRatingControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/STRatingControl/STRatingControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = STRatingControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE54B2CBEEF189B6B7A8B66E2C8EBC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC42366E03BEB968808FC4B928878D25 /* STRatingControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/STRatingControl/STRatingControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/STRatingControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/STRatingControl/STRatingControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = STRatingControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E929840E934EC1D4A08C1E632C9D4DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F4BD5C6B4749584B5C86445506FDA8F /* Pods-STRatingControl_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-STRatingControl_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-STRatingControl_Tests/Pods-STRatingControl_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_STRatingControl_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27528CE12F40DF32803477A47BCF7D2A /* Build configuration list for PBXNativeTarget "STRatingControl-STRatingControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B17EFA9485B36BA8A98E3044D3D2E7E /* Debug */,
+				159E78BAB3E62D5792254F089AC6151C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43DEB87DA6AF336852917BD95716DA0A /* Build configuration list for PBXNativeTarget "Pods-STRatingControl_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE93899200C43CB14E4FFA5CA5103AC /* Debug */,
+				23318A34D14399F4BB1019E5C7D81911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8344B1AB61D1475C315FC3878D54BB36 /* Build configuration list for PBXNativeTarget "STRatingControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE54B2CBEEF189B6B7A8B66E2C8EBC24 /* Debug */,
+				A3DBFFE2F5D7931A28FF380622606752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEB7DDADA2C757A54037E4FD395FB564 /* Build configuration list for PBXNativeTarget "Pods-STRatingControl_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DDFC6864DB21B5963D5110627D98BAB /* Debug */,
+				E929840E934EC1D4A08C1E632C9D4DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

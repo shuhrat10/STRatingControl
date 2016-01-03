@@ -1,0 +1,14 @@
+PODS:
+  - STRatingControl (0.1.0)
+
+DEPENDENCIES:
+  - STRatingControl (from `../`)
+
+EXTERNAL SOURCES:
+  STRatingControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  STRatingControl: cf59bef4482eaa11333fbf27d8301fcd169de67c
+
+COCOAPODS: 0.39.0
