@@ -9,7 +9,7 @@
 import UIKit
 import STRatingControl
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, STRatingControlDelegate {
 
   // MARK: Properties
   
@@ -19,6 +19,7 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    ratingControl.delegate = self
   }
   
   override func didReceiveMemoryWarning() {
@@ -33,6 +34,11 @@ class ViewController: UIViewController {
   
   @IBAction func plusButton(sender: AnyObject) {
     ratingControl.rating += 1
+  }
+    
+  // MARK: Delegate
+  func didSelectRating(ratingControl: STRatingControl, rating: Int) {
+    print("Rating set to: \(rating)")
   }
 
 }

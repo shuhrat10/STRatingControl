@@ -8,6 +8,10 @@
 
 import UIKit
 
+@objc public protocol STRatingControlDelegate {
+    optional func didSelectRating(control:STRatingControl, rating:Int)
+}
+
 @IBDesignable
 
 public class STRatingControl: UIView {
@@ -45,6 +49,8 @@ public class STRatingControl: UIView {
       setNeedsDisplay()
     }
   }
+    
+  weak public var delegate : STRatingControlDelegate?
   
   private var ratingButtons = [UIButton]()
   private var buttonSize : Int {
@@ -109,6 +115,10 @@ public class STRatingControl: UIView {
   
   override public func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
     handleStarTouches(touches, withEvent: event)
+  }
+
+  override public func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    delegate?.didSelectRating?(self, rating: self.rating)
   }
   
   func handleStarTouches(touches: Set<UITouch>, withEvent event: UIEvent?) {
