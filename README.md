@@ -60,7 +60,7 @@ Tells the delegate when the rating is changed.
 
 ### v1.0.1
 
-- [**NEW**] Added **didSelectRating** delegate method 
+- Added **didSelectRating** delegate method 
 
 ### v1.0.0
 - Initial commit
