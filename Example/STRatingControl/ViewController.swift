@@ -19,6 +19,7 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.ratingControl.delegate = self
   }
   
   override func didReceiveMemoryWarning() {
@@ -37,3 +38,11 @@ class ViewController: UIViewController {
 
 }
 
+
+extension ViewController: STRatingControlDelegate {
+  
+  func didSelectRating(control: STRatingControl, rating: Int) {
+    print("Did select rating: \(rating)")
+  }
+  
+}

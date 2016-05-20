@@ -48,10 +48,22 @@ Put on storyboard UIView, and set class STRatingControl.
 * `emptyStarImage` : Image for empty rating stars
 * `spacing` : Space between rating stars
 
+## Delegate Method(s)
+
+Tells the delegate when the rating is changed.
+
+```swift
+  func didSelectRating(control: STRatingControl, rating: Int)
+```
+
 ## Changelog
 
-### v0.1.0
-- [**NEW**] Initial commit
+### v1.0.1
+
+- [**NEW**] Added **didSelectRating** delegate method 
+
+### v1.0.0
+- Initial commit
 
 ## Author
 
