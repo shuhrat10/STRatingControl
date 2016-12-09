@@ -1,5 +1,5 @@
-language: objective-c
-osx_image: xcode7
+language: swift
+osx_image: xcode8.1
 
 # cache: 
   # directories:
@@ -13,4 +13,4 @@ xcode_workspace: Example/STRatingControl.xcworkspace
 xcode_scheme: STRatingControl-Example
 xcode_sdk: iphonesimulator
 env:
-  - XCODE_SDK=iphonesimulator9.0
+  - XCODE_SDK=iphonesimulator10.1
