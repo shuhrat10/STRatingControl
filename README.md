@@ -22,7 +22,6 @@ You may also quick try the example project with
 
 `pod try 'STRatingControl'`
 
-**Library requires target iOS 7.0 and above**
 
 ## Properties
 
@@ -56,7 +55,17 @@ Tells the delegate when the rating is changed.
   func didSelectRating(control: STRatingControl, rating: Int)
 ```
 
+Requirements
+
+iOS 8.0+ / macOS 10.10+ / tvOS 9.0+ / watchOS 2.0+
+Xcode 8.1+
+Swift 3.0+
+
 ## Changelog
+
+### v1.1.0
+- Swift 3 support
+
 
 ### v1.0.1
 
