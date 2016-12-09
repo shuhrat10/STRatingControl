@@ -29,7 +29,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPJ-oD-pEO" customClass="STRatingControl" customModule="STRatingControl">
-                                <rect key="frame" x="93.5" y="225" width="185" height="34"/>
+                                <rect key="frame" x="94" y="225" width="185" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="QGa-Ut-rXY"/>
                                     <constraint firstAttribute="height" constant="34" id="y22-gy-waD"/>

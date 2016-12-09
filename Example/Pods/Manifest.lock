@@ -1,5 +1,5 @@
 PODS:
-  - STRatingControl (0.1.1)
+  - STRatingControl (1.1.0)
 
 DEPENDENCIES:
   - STRatingControl (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  STRatingControl: 2170e44ad8efac32f68a6ab9562f09ff9180cc76
+  STRatingControl: b955270e8f1238a945edad951f7ab8beac7f51ea
 
 PODFILE CHECKSUM: 24d586efc81f421c646c4e894020b6656b6958b6
 
