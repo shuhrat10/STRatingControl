@@ -28,11 +28,11 @@ class ViewController: UIViewController {
   
   // MARK: Action
   
-  @IBAction func minusButton(sender: AnyObject) {
+  @IBAction func minusButton(_ sender: AnyObject) {
     ratingControl.rating -= 1
   }
   
-  @IBAction func plusButton(sender: AnyObject) {
+  @IBAction func plusButton(_ sender: AnyObject) {
     ratingControl.rating += 1
   }
 
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
 
 extension ViewController: STRatingControlDelegate {
   
-  func didSelectRating(control: STRatingControl, rating: Int) {
+  func didSelectRating(_ control: STRatingControl, rating: Int) {
     print("Did select rating: \(rating)")
   }
   

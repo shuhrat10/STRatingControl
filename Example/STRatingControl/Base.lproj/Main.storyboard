@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Z2n-4U-7Vt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Z2n-4U-7Vt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Feedback-->
@@ -14,18 +18,18 @@
                         <viewControllerLayoutGuide type="bottom" id="xSq-W5-Bq1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KT3-bW-qf8">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="content" translatesAutoresizingMaskIntoConstraints="NO" id="RzL-ka-rfI">
-                                <rect key="frame" x="208" y="28" width="183" height="164"/>
+                                <rect key="frame" x="96" y="28" width="183" height="164"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="164" id="IQF-IX-bre"/>
                                     <constraint firstAttribute="width" constant="183" id="uF6-52-RWl"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPJ-oD-pEO" customClass="STRatingControl" customModule="STRatingControl">
-                                <rect key="frame" x="206" y="225" width="185" height="34"/>
+                                <rect key="frame" x="94" y="225" width="185" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="QGa-Ut-rXY"/>
                                     <constraint firstAttribute="height" constant="34" id="y22-gy-waD"/>
@@ -42,7 +46,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="RzL-ka-rfI" firstAttribute="centerX" secondItem="KT3-bW-qf8" secondAttribute="centerX" id="Ftr-wu-dQ6"/>
                             <constraint firstItem="RzL-ka-rfI" firstAttribute="top" secondItem="47s-D1-dzd" secondAttribute="bottom" constant="28" id="dGI-Wp-4Ve"/>
@@ -52,13 +56,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Feedback" id="m0x-bv-ikr">
                         <barButtonItem key="leftBarButtonItem" image="minus" id="EYF-HG-M61">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="minusButton:" destination="ZzP-Mv-Ezj" id="0xa-yD-3Gn"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="plus" id="fWn-Rj-awZ">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="plusButton:" destination="ZzP-Mv-Ezj" id="9Q6-Ft-AKu"/>
                             </connections>
@@ -81,10 +85,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="yVD-rx-HSS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.97254901959999995" green="0.46620245290000001" blue="0.20200234019999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.97254901959999995" green="0.46620245290000001" blue="0.20200234019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -101,7 +105,7 @@
         <image name="content" width="182" height="164"/>
         <image name="emptyStar" width="3" height="3"/>
         <image name="filledStar" width="21" height="20"/>
-        <image name="minus" width="20" height="2"/>
-        <image name="plus" width="20" height="19"/>
+        <image name="minus" width="19" height="1"/>
+        <image name="plus" width="19" height="19"/>
     </resources>
 </document>

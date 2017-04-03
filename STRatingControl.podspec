@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "STRatingControl"
-  s.version          = "0.1.1"
+  s.version          = "1.1.0"
   s.summary          = "STRatingControl is a UI control that represent the star rating control."
 
 # This description is used to generate tags and improve search results.

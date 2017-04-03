@@ -9,16 +9,16 @@
 import UIKit
 
 @objc public protocol STRatingControlDelegate {
-  optional func didSelectRating(control: STRatingControl, rating: Int)
+  @objc optional func didSelectRating(_ control: STRatingControl, rating: Int)
 }
 
 @IBDesignable
 
-public class STRatingControl: UIView {
+open class STRatingControl: UIView {
   
   // MARK: Properties
   
-  @IBInspectable public var rating : Int = 0 {
+  @IBInspectable open var rating : Int = 0 {
     didSet {
       if rating < 0 {
         rating = 0
@@ -50,13 +50,13 @@ public class STRatingControl: UIView {
     }
   }
   
-  weak public var delegate : STRatingControlDelegate?
+  weak open var delegate : STRatingControlDelegate?
   
-  private var ratingButtons = [UIButton]()
-  private var buttonSize : Int {
-    return Int(CGRectGetHeight(self.frame))
+  fileprivate var ratingButtons = [UIButton]()
+  fileprivate var buttonSize : Int {
+    return Int(self.frame.height)
   }
-  private var width : Int {
+  fileprivate var width : Int {
     return (buttonSize + spacing) * maxRating
   }
   
@@ -68,10 +68,10 @@ public class STRatingControl: UIView {
       for _ in 0..<maxRating {
         let button = UIButton()
         
-        button.setImage(emptyStarImage, forState: .Normal)
-        button.setImage(filledStarImage, forState: .Selected)
-        button.setImage(filledStarImage, forState: [.Highlighted, .Selected])
-        button.userInteractionEnabled = false
+        button.setImage(emptyStarImage, for: UIControlState())
+        button.setImage(filledStarImage, for: .selected)
+        button.setImage(filledStarImage, for: [.highlighted, .selected])
+        button.isUserInteractionEnabled = false
         
         button.adjustsImageWhenHighlighted = false
         ratingButtons += [button]
@@ -80,7 +80,7 @@ public class STRatingControl: UIView {
     }
   }
   
-  override public func layoutSubviews() {
+  override open func layoutSubviews() {
     super.layoutSubviews()
     
     self.initRate()
@@ -89,41 +89,41 @@ public class STRatingControl: UIView {
     var buttonFrame = CGRect(x: 0, y: 0, width: buttonSize, height: buttonSize)
     
     // Offset each button's origin by the length of the button plus spacing.
-    for (index, button) in ratingButtons.enumerate() {
+    for (index, button) in ratingButtons.enumerated() {
       buttonFrame.origin.x = CGFloat(index * (buttonSize + spacing))
       button.frame = buttonFrame
     }
     updateButtonSelectionStates()
   }
   
-  override public func intrinsicContentSize() -> CGSize {
+  override open var intrinsicContentSize : CGSize {
     return CGSize(width: width, height: buttonSize)
   }
   
   func updateButtonSelectionStates() {
-    for (index, button) in ratingButtons.enumerate() {
+    for (index, button) in ratingButtons.enumerated() {
       // If the index of a button is less than the rating, that button should be selected.
-      button.selected = index < rating
+      button.isSelected = index < rating
     }
   }
   
   // MARK: Gesture recognizer
   
-  override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     handleStarTouches(touches, withEvent: event)
   }
   
-  override public func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
     handleStarTouches(touches, withEvent: event)
   }
   
-  override public func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     delegate?.didSelectRating?(self, rating: self.rating)
   }
   
-  func handleStarTouches(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  func handleStarTouches(_ touches: Set<UITouch>, withEvent event: UIEvent?) {
     if let touch = touches.first {
-      let position = touch.locationInView(self)
+      let position = touch.location(in: self)
       
       if position.x > -50 && position.x < CGFloat(width + 50) {
         ratingButtonSelected(position)
@@ -131,9 +131,9 @@ public class STRatingControl: UIView {
     }
   }
   
-  func ratingButtonSelected(position: CGPoint) {
-    for (index, button) in ratingButtons.enumerate() {
-      if position.x > CGRectGetMinX(button.frame) {
+  func ratingButtonSelected(_ position: CGPoint) {
+    for (index, button) in ratingButtons.enumerated() {
+      if position.x > button.frame.minX {
         self.rating = index + 1
       } else if position.x < 0 {
         self.rating = 0
