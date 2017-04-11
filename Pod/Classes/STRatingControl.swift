@@ -57,7 +57,7 @@ open class STRatingControl: UIView {
     return Int(self.frame.height)
   }
   fileprivate var width : Int {
-    return (buttonSize + spacing) * maxRating
+    return buttonSize * maxRating + spacing * max(0, maxRating - 1)
   }
   
   // MARK: Initialization
