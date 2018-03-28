@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Z2n-4U-7Vt">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Z2n-4U-7Vt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xSq-W5-Bq1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KT3-bW-qf8">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="content" translatesAutoresizingMaskIntoConstraints="NO" id="RzL-ka-rfI">
@@ -29,29 +29,25 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPJ-oD-pEO" customClass="STRatingControl" customModule="STRatingControl">
-                                <rect key="frame" x="94" y="225" width="185" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="185" id="QGa-Ut-rXY"/>
-                                    <constraint firstAttribute="height" constant="34" id="y22-gy-waD"/>
-                                </constraints>
+                                <rect key="frame" x="82.5" y="214" width="210" height="38"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="rating">
-                                        <integer key="value" value="0"/>
+                                        <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyStarImage" value="emptyStar"/>
                                     <userDefinedRuntimeAttribute type="image" keyPath="filledStarImage" value="filledStar"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyStarImage" value="emptyStar"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="yPJ-oD-pEO" firstAttribute="top" secondItem="RzL-ka-rfI" secondAttribute="bottom" constant="22" id="5In-QY-u8r"/>
+                            <constraint firstItem="yPJ-oD-pEO" firstAttribute="centerX" secondItem="RzL-ka-rfI" secondAttribute="centerX" id="8Lq-5O-FJk"/>
                             <constraint firstItem="RzL-ka-rfI" firstAttribute="centerX" secondItem="KT3-bW-qf8" secondAttribute="centerX" id="Ftr-wu-dQ6"/>
                             <constraint firstItem="RzL-ka-rfI" firstAttribute="top" secondItem="47s-D1-dzd" secondAttribute="bottom" constant="28" id="dGI-Wp-4Ve"/>
-                            <constraint firstItem="yPJ-oD-pEO" firstAttribute="centerX" secondItem="KT3-bW-qf8" secondAttribute="centerX" constant="-1.5" id="g65-Nd-166"/>
-                            <constraint firstItem="yPJ-oD-pEO" firstAttribute="top" secondItem="RzL-ka-rfI" secondAttribute="bottom" constant="33" id="jrC-Iw-U4Y"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Feedback" id="m0x-bv-ikr">
@@ -74,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RwK-zE-jLh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1234" y="217"/>
+            <point key="canvasLocation" x="1232.8" y="216.34182908545728"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gEI-HG-d1T">
@@ -83,7 +79,7 @@
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="yVD-rx-HSS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.97254901959999995" green="0.46620245290000001" blue="0.20200234019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">

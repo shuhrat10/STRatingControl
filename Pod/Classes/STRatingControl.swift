@@ -29,22 +29,22 @@ open class STRatingControl: UIView {
       setNeedsLayout()
     }
   }
-  @IBInspectable var maxRating : Int = 5 {
+  @IBInspectable open var maxRating : Int = 5 {
     didSet {
       setNeedsLayout()
     }
   }
-  @IBInspectable var filledStarImage : UIImage? {
+  @IBInspectable open var filledStarImage : UIImage? {
     didSet {
       setNeedsDisplay()
     }
   }
-  @IBInspectable var emptyStarImage : UIImage? {
+  @IBInspectable open var emptyStarImage : UIImage? {
     didSet {
       setNeedsDisplay()
     }
   }
-  @IBInspectable var spacing : Int = 5 {
+  @IBInspectable open var spacing : Int = 5 {
     didSet {
       setNeedsDisplay()
     }
@@ -53,26 +53,23 @@ open class STRatingControl: UIView {
   weak open var delegate : STRatingControlDelegate?
   
   fileprivate var ratingButtons = [UIButton]()
-  fileprivate var buttonSize : Int {
+  fileprivate var buttonHeight : Int {
     return Int(self.frame.height)
   }
   fileprivate var width : Int {
-    return (buttonSize + spacing) * maxRating
+    return ((buttonHeight + spacing) * maxRating) - spacing
   }
   
   // MARK: Initialization
   
   func initRate() {
     if ratingButtons.count == 0 {
-      
       for _ in 0..<maxRating {
         let button = UIButton()
-        
-        button.setImage(emptyStarImage, for: UIControlState())
+        button.setImage(emptyStarImage, for: .normal)
         button.setImage(filledStarImage, for: .selected)
         button.setImage(filledStarImage, for: [.highlighted, .selected])
         button.isUserInteractionEnabled = false
-        
         button.adjustsImageWhenHighlighted = false
         ratingButtons += [button]
         addSubview(button)
@@ -86,18 +83,18 @@ open class STRatingControl: UIView {
     self.initRate()
     
     // Set the button's width and height to a square the size of the frame's height.
-    var buttonFrame = CGRect(x: 0, y: 0, width: buttonSize, height: buttonSize)
+    var buttonFrame = CGRect(x: 0, y: 0, width: buttonHeight, height: buttonHeight)
     
     // Offset each button's origin by the length of the button plus spacing.
     for (index, button) in ratingButtons.enumerated() {
-      buttonFrame.origin.x = CGFloat(index * (buttonSize + spacing))
+      buttonFrame.origin.x = CGFloat(index * (buttonHeight + spacing))
       button.frame = buttonFrame
     }
     updateButtonSelectionStates()
   }
   
   override open var intrinsicContentSize : CGSize {
-    return CGSize(width: width, height: buttonSize)
+    return CGSize(width: width, height: buttonHeight)
   }
   
   func updateButtonSelectionStates() {
