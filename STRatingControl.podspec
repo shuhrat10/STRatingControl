@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "STRatingControl"
-  s.version          = "1.1.0"
+  s.version          = "1.1.1"
   s.summary          = "STRatingControl is a UI control that represent the star rating control."
 
 # This description is used to generate tags and improve search results.
@@ -25,17 +25,9 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Shukhrat Tursunov" => "shuhrat10@gmail.com" }
   s.source           = { :git => "https://github.com/shuhrat10/STRatingControl.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  #s.resource_bundles = {
-  #  'STRatingControl' => ['Pod/Assets/*.png']
-  #}
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
